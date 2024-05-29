@@ -1,7 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
+
+// Utilisation de CORS
+app.use(cors());
+
 app.use(express.json()); // Pour parser les requêtes JSON
 
 // Connection à MongoDB
